@@ -17,7 +17,8 @@ export default async function handler(req, res) {
                 next(err);
                 return;
             }
-
+            console.log("==fields===", fields);
+            console.log("==files===", files);
             const filePath = files.file[0].filepath;
 
             const results = [];
